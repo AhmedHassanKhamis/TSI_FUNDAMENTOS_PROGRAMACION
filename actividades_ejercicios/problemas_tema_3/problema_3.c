@@ -3,7 +3,7 @@
 int main()
 {
     
-    int numero,esnegativo;
+    int numero;
     printf("programa que introduces un numero entero y te dice su valor absoluto\n");
     printf("Introduce el numero:\n");
     scanf("%d", &numero);
