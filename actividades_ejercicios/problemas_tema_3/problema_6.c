@@ -1,18 +1,17 @@
 #include <stdio.h>
 
-int main()
+int main(int argc, char const *argv[])
 {
-    printf("Programa que imprime la tabla de multiplicar del numero introducido por teclado\n");
-    int numero;
+    int num=0;
     do
-    {
-        printf("Introduce un numero del 1 al 9:\n");
-        scanf("%d", &numero);
-    } while (numero < 0 || numero > 9);
+    {  
+        printf("introduce un numero y te doy su tabla de multiplicar:\n");
+        scanf("%d", &num);
+    } while (num > 9 || num < 1);
+    
     for (int i = 1; i <= 10; i++)
     {
-        printf("%d x %d = %d\n", i, numero, i * numero);
+        printf("%d x %d = %d\n",i,num, i * num);
     }
-    
     return 0;
 }

@@ -2,18 +2,17 @@
 
 int main()
 {
-    int numAristasY;
-    printf("Bienvenido al dibujador de triangulo rectangulo\n");
-    printf("Introduce el numero de largo que tendran las aristas del cubo:\n");
-    scanf("%d", &numAristasY);
-    for (int i = 0; i <= numAristasY; i++)
+    int alto=0;
+    printf("Introduce la altura del triangulo rectangulo:\n");
+    scanf("%d", &alto);
+
+    for (int i = alto; i >= 1; i--)
     {
-        for (int j = numAristasY; j > i ; j--)
+        for (int j = 0; j < i; j++)
         {
-           printf("X");
+            printf("X");
         }
         printf("\n");
     }
-    
     return 0;
 }

@@ -2,20 +2,19 @@
 
 int main()
 {
-    int numAristasX,numAristasY;
-    printf("Bienvenido al dibujador de rectangulos/cuadrados\n");
-    printf("Introduce el numero de ancho que tendran las aristas del cubo:\n");
-    scanf("%d", &numAristasX);
-    printf("Introduce el numero de largo que tendran las aristas del cubo:\n");
-    scanf("%d", &numAristasY);
-    for (int i = 1; i <= numAristasY; i++)
+    int numX,numY;
+    
+    printf("Introduce el tamanio en X:\n");
+    scanf("%d", &numX);
+    printf("Introduce el tamanio en Y:\n");
+    scanf("%d", &numY);
+    for (int i = 0; i < numY; i++)
     {
-        for (int j = 0; j < numAristasX; j++)
+        for (int j = 0; j < numX; j++)
         {
-           printf("X");
+            printf("X");
         }
         printf("\n");
     }
-    
     return 0;
 }

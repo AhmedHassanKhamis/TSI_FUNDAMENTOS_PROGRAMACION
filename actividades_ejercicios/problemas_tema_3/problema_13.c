@@ -3,13 +3,12 @@
 int main()
 {
     char caracter;
-    printf("Introduce un caracter en minuscula y te lo transformo a mayuscula\n");
     do
     {
-        caracter = 0;
-        printf("Introduce un caracter en minuscula:\n");
-        scanf(" %c", &caracter);
-    } while (97 > caracter || caracter > 122);
-    printf("Tu caracter en mayuscula es: %c\n", caracter - 32);
+      printf("\n\nIntroduce un caracter en minuscula y te doy su mayuscula\n(si introduces algo que no es mayuscula te volvere a preguntar):");
+      scanf(" %c", &caracter);
+    } while (122 < caracter || caracter < 97);
+    printf("Tu caracter en mayuscula es: %c", caracter - 32);
+    
     return 0;
 }
